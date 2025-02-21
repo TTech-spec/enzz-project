@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Work Sans", serif;
+}
+
+/* header styling */
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#menu-icon {
+  display: none;
+}
+
+#cancel-icon {
+  display: none;
+}
+
+#nav-ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+}
+.contact{
+    background-color: aquamarine;
+    color: white;
+  padding-bottom: 20%;
+}
+.heading{
+    text-align: center;
+ padding-top: 30px;
+   font-size: 90px;
+   /* border: 1px solid black; */
+}
+#c-button {
+  background-color: rgb(4, 50, 3);
+  border: none;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 30px;
+}
+.text-heading{
+  font-size: 50px;
+}
+#c-button:hover {
+  background-color: #00c853;
+}
+
+.main-content {
+  display: flex;
+ position: relative;
+ bottom: 99px;
+ border-radius: 20px;
+  padding: 2rem 5%;
+  gap: 2rem;
+  border: 1px solid black;
+  border: none;
+  background-color: white;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: rgb(231, 230, 230) 3px 10px 50px 3px;
+}
+
+.image-section {
+  flex: 1;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.form-section {
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.required::after {
+  content: " *";
+  color: red;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button {
+  background: #006400;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background: #005400;
+}
+footer {
+  background-color: rgb(2, 48, 1);
+  color: #fff;
+  padding: 40px 10px;
+  margin-top: 50px;
+  line-height: 90%;
+  font-family: Arial, sans-serif;
+}
+
+.all-foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+ .supp, .team, .number, .locate {
+  flex: 1 1 200px;
+  /* margin: 10px; */
+  width: 200px;
+  padding-left: 10px;
+  /* border: 1px solid black; */
+}
+
+.foot-1 img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.foot-1 p {
+  font-size: 20px;
+  width:290px ;
+  /* border: 1px solid #000; */
+  line-height: 1.9rem;
+}
+
+.enx, .enz{
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+ul li a:hover {
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+  
+/* responsive design starts here */
+@media (max-width:950px) {
+  
+}
+@media (max-width: 800px) {
+  #menu-icon,
+  #cancel-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  #cancel-icon {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-weight: lighter;
+  }
+
+  nav {
+    background-color: white;
+    width: 85%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 70px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 20px;
+    display: none;
+  }
+
+  #nav-ul {
+    gap: 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #hero-container {
+    width: 90%;
+    flex-flow: column nowrap;
+    gap: 50px;
+    /* border: 1px solid red; */
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+}
+@media (max-width:800px) {
+  .all-foot{
+      display: block;
+        /* border: 1px solid black;     */
+       width: 80%;
+      flex-direction: row wrap;
+       padding-left: 10px;
+      /* justify-content: space-between; */
+       gap: 50px;
+       margin-left: 29px;
+      /* align-items: center; */
+    
+    }
+} 
+@media (max-width:800px) {
+  .image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: none;
+  }
+  .form-group {
+    margin-bottom: 1.5rem;
+  
+  }
+  .form-section {
+    flex: 1;
+    margin: auto;
+  }
+   
+}
+
+
+
+
+
+

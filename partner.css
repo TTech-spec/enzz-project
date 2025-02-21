@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Work Sans", serif;
+}
+
+/* header styling */
+
+/* header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: static;
+} */
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 15px 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensures it's above other elements */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+#menu-icon {
+  display: none;
+}
+
+#cancel-icon {
+  display: none;
+}
+
+#nav-ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+ 
+}
+
+.nav-link a {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+}
+#hero-heading{
+  font-size: 70px;
+  line-height: 109%;
+}
+.nav-link a:visited {
+  color: black;
+}
+.dropdown {
+    position: relative;
+}
+
+/* Hide dropdown menu by default */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+/* Style dropdown links */
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.nav-link a:hover {
+  color: #00c853;
+  border-bottom: 1.5px solid #00c853;
+}
+
+#c-button {
+  background-color: rgb(4, 50, 3);
+  border: none;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 30px;
+}
+
+#c-button:hover {
+  background-color: #00c853;
+}
+.empower{
+    background-image: url(./header-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 70px;
+   
+}
+.african{
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    font-family: Satoshi-Variable, sans-serif;
+    padding-top:8rem;
+}
+.cap{
+    width: 90%;
+    font-family: Satoshi-Variable, sans-serif;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+}
+/* General Button Styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    /* margin: 20px 0; */
+    margin: auto;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 20px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Portfolio Button */
+  .port {
+    background-color: white; /* Blue */
+    color: black;
+  }
+  
+  .port:hover {
+    background-color: green; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  /* Contact Button */
+  .cont {
+    background-color: inherit; /* Green */
+    border: 2px solid white;
+    color: #fff;
+  }
+  
+  .cont:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  .partners{
+    text-align: center;
+    font-family: Satoshi-Variable, sans-serif;
+    font-size: 40px;
+margin-top: 40px;
+  }
+  /* Grid layout for two columns */
+.grid-container {
+  margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between grid items */
+    padding-bottom: 20px;
+  }
+  
+  /* Flexbox for aligning content inside each grid item */
+  .grid-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Center content horizontally */
+    text-align: left; /* Center text */
+
+    padding: 15px;
+    padding-bottom: 20%;
+  }
+  
+  /* Styling for images */
+  .grid-container img {
+    max-width: 90%; /* Ensure images don't overflow */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space below the image */
+    margin: auto;
+  }
+  
+  /* Styling for content */
+  .grid-container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+  }
+   .forward{
+    /* border: 1px solid black; */
+    width: 90%;
+    margin-left: 33px;
+    margin-top: 20px;
+  }
+  .tech{
+    /* border: 1px solid black; */
+    width: 90%;
+    margin-left: 33px;
+    margin-top: 30px;
+  } 
+  .view{
+  color: green;
+  text-decoration-line: none;
+  margin-top: 20px;
+  margin-left: 30px;
+  }
+  .tec{
+    /* border: 1px solid black;  */
+    width: 500px;
+    margin-top: 30px;
+  }
+ .bla{
+  margin-top: 30px;
+padding-top: 65px;
+ }
+  h4{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 33px;
+  }
+  .add{
+    display: flex;
+    margin-top: 40px;
+    padding-top: 40px;
+    justify-content: center;
+    margin: auto;
+    justify-content: space-between;
+    width: 69%;
+  }
+  /* General Footer Styling */
+  footer {
+    background-color: rgb(2, 48, 1);
+    color: #fff;
+    padding: 40px 10px;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .all-foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 10px;
+  }
+  
+   .supp, .team, .number, .locate {
+    flex: 1 1 200px;
+    /* margin: 10px; */
+    width: 200px;
+    padding-left: 10px;
+    /* border: 1px solid black; */
+  }
+  
+  .foot-1 img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .foot-1 p {
+    font-size: 14px;
+    width:290px ;
+    /* border: 1px solid #000; */
+    line-height: 1.6;
+  }
+  
+  .enx, .enz{
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  ul li a:hover {
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    /* border-top: 1px solid #444; */
+  } 
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 800px) {
+    #menu-icon,
+    #cancel-icon {
+      display: block;
+      cursor: pointer;
+    }
+  
+    #cancel-icon {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      font-weight: lighter;
+    }
+  
+    nav {
+      background-color: white;
+      width: 85%;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 70px;
+      margin: auto;
+      border-radius: 15px;
+      padding: 20px;
+      display: none;
+    }
+  
+    #nav-ul {
+      gap: 30px;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #hero-container {
+      width: 90%;
+      flex-flow: column nowrap;
+      gap: 50px;
+      /* border: 1px solid red; */
+    }
+}
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+  }
+ /* Grid layout for two columns */
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .button-container {
+      flex-direction: column; /* Stack buttons vertically on smaller screens */
+      align-items: center;
+      gap: 15px;
+    }
+  
+    button {
+      width: 80%; /* Make buttons wider on smaller screens */
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    button {
+      width: 90%; 
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 388px) { 
+    .partners {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  
+    .grid-container {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr; /* Single-column layout */
+      gap: 15px;
+      padding-bottom: 15px;
+      border: none; /* Remove border for cleaner look */
+    }
+  
+    .grid-container img {
+      max-width: 90%; /* Ensure full responsiveness */
+      height: auto;
+      display: block;
+      margin: 0 auto; /* Center images */
+      object-fit: contain;
+    }
+  
+    .grid-container > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center content */
+      text-align: center;
+      /* padding: 15px; */
+      background: #f9f9f9; /* Light background for better visibility */
+      border-radius: 10px;
+    }
+  
+    h4 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  
+    .tech, .tec, .forward {
+      font-size: 14px;
+      color: #444;
+      text-align: justify;
+      max-width: 90%;
+    }
+  
+    .view {
+      margin-top: 10px;
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      background-color: #007bff;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+  
+    .view:hover {
+      background-color: #0056b3;
+    }
+    .african{
+      text-align: left;
+      color: white;
+      font-size: 20px;
+      font-family: Satoshi-Variable, sans-serif;
+      padding-top:8rem;
+  }
+  .cap{
+    width: 90%;
+    font-family: Satoshi-Variable, sans-serif;
+    color: white;
+    text-align: left;
+    margin: auto;
+    padding-top: 30px;
+}
+  }
+  
+  
