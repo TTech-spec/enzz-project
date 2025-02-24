@@ -271,8 +271,8 @@ ul li a:hover {
 } 
 @media (max-width:800px) {
   .image-section img {
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
     border-radius: 8px;
     display: none;
   }
@@ -282,7 +282,9 @@ ul li a:hover {
   }
   .form-section {
     flex: 1;
-    margin: auto;
+    border: 1px solid black;
+ margin-left: 2px;
+ padding-right: a20px;
   }
    
 }
