@@ -226,12 +226,14 @@ margin-top: 40px;
    .forward{
     /* border: 1px solid black; */
     width: 90%;
+    font-size: 20px;
     margin-left: 33px;
     margin-top: 20px;
   }
   .tech{
     /* border: 1px solid black; */
     width: 90%;
+    font-size: 20px;
     margin-left: 33px;
     margin-top: 30px;
   } 
@@ -240,11 +242,13 @@ margin-top: 40px;
   text-decoration-line: none;
   margin-top: 20px;
   margin-left: 30px;
+  font-size: 19px;
   }
   .tec{
-    /* border: 1px solid black;  */
+ font-size: 20px;
     width: 500px;
     margin-top: 30px;
+    padding-left: 32px;
   }
  .bla{
   margin-top: 30px;
